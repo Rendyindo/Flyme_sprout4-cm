@@ -759,6 +759,7 @@
     .prologue
     return-void
 
+    .line 931
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
     move-result v8
@@ -1270,6 +1271,7 @@
     .prologue
     return-void
 
+    .line 957
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
     move-result v1
