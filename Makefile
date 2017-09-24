@@ -14,14 +14,14 @@ BASE := base_cm
 # It depends on the device's resolution.
 # The default value is hdpi.
 #-----------------------------------------------------------------------------
-DENSITY := xhdpi
+DENSITY := hdpi
 
 ##############################################################################
 # The value is used to config the bootanimation.
 # It depends on the device's resolution, such as 480x854, 540x960, 720x1280, 1080x1920.
 # The default value is nothing.
 #-----------------------------------------------------------------------------
-RESOLUTION := 720x1280
+RESOLUTION := 485x854
 
 ##############################################################################
 # The value decides whether use prebuilt image or pack from the BOOT or RECOVERY directory in the vendor directory.
@@ -54,7 +54,7 @@ vendor_modify_images := boot
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/priv-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth BluetoothMidiService FMRadioGoogle FmRadioTrampoline2 HTMLViewer KeyChain PicoTts PrintSpooler Stk UserDictionaryProvider BackupRestoreConfirmation DefaultContainerService ExternalStorageProvider FusedLocation InputDevices ProxyHandler SharedStorageBackup Shell WAPPushManager CaptivePortalLogin CMSettingsProvider telresources
+vendor_saved_apps := Bluetooth BluetoothMidiService FMRadioGoogle FmRadioTrampoline2 HTMLViewer KeyChain PicoTts PrintSpooler Stk UserDictionaryProvider BackupRestoreConfirmation DefaultContainerService ExternalStorageProvider FusedLocation InputDevices ProxyHandler SharedStorageBackup Shell WAPPushManager CaptivePortalLogin CMSettingsProvider telresources webview
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
