@@ -105,7 +105,7 @@ vendor_modify_jars := framework services telephony-common wifi-service org.cyano
 # The command idtoname how to use: first use "apktool d source/system/framework/framework-res.apk other/TMP/framework-res",
 # and then use "idtoname other/TMP/framework-res/res/values/public_master.xml XXXX/smali"(XXXX is the directory where you decode board system apk).
 #-----------------------------------------------------------------------------
-#board_modify_apps := TeleService
+board_modify_apps := TeleService ConnectivitySettings
 
 ##############################################################################
 # The value decides which jar you want to modify, when the jar is based on the board framework jar.
@@ -138,8 +138,12 @@ override_property += \
 # The default value is Nexus-6P_Unofficial.
 # You should configure the property according to your device and your ID with replace the "Nexus-6P_Unofficial".
 override_property += \
-    ro.flyme.romer=Unofficial \
-    ro.product.model_romer=sprout_Unofficial
+    ro.flyme.romer=RendyAK \
+    ro.product.model_romer=sprout_RendyAK \
+    config.disable_atlas=true \
+    persist.adb.notify=0 \
+    dalvik.vm.heapgrowthlimit=192m \
+    dalvik.vm.heapsize=512m
 
 ##############################################################################
 # The value decides which property you will remove from the build.prop.
